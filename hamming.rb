@@ -11,10 +11,7 @@ class Hamming
   def self.compute(string1, string2)
 
     raise ArgumentError.new("Strings must be same length") if string1.length != string2.length
-
-    # array = string1 + string2
-    # min_length = array.min_by{|string| string.length}
-
+    
     differences = 0
     # randomly picked length of 1st string
     string1.length.times do |i|
